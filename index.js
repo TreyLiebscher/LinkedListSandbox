@@ -79,21 +79,6 @@ function inverter(linklist){
   };
 }
 
-function relocate(current, target, list){
-  if(list.head == null){
-    return list;
-  }
-  let position = 0;
-  let node = list._find(current);
-  while(position < target && node !== null){
-    console.log(node)
-    position++;
-    node = node.next;
 
-  }
-  return list;
-}
-
-const tester = relocate(2, 4, listA);
 const inverseListA = inverter(listA);
-// console.log(inverseListA);
+console.log(inverseListA);
